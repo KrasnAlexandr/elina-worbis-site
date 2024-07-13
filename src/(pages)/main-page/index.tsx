@@ -23,7 +23,6 @@ export const MainPage = () => {
     <div className={clsx(styles.mainPage)}>
       <section className={styles.firstSection}>
         <div className={clsx(styles.header)}>
-          <SignSVG />
           <LanguageSwitcher />
         </div>
 
@@ -31,7 +30,7 @@ export const MainPage = () => {
           <h1 className={clsx(styles.title)}>
             We dive into the heart of Mexico, revealing the secrets of exquisite silver jewelry.
           </h1>
-          {/*<Video />*/}
+          <SignSVG className={clsx(styles.mainSvg)} />
         </div>
       </section>
       <section className={clsx(styles.secondSection)}>
