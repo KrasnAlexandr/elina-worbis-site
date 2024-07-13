@@ -42,9 +42,21 @@
       flex-direction: column-reverse;
     }
 
+    .mainSvg {
+      width: 320px;
+    }
+
     .title {
       width: 100%;
       max-width: none;
+    }
+  }
+}
+
+@media (width <= 490px) {
+  .mainPage {
+    .mainContent {
+      align-items: flex-start;
     }
   }
 }
