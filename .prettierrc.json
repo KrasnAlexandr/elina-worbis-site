@@ -1,0 +1,20 @@
+{
+  "printWidth": 120,
+  "endOfLine": "lf",
+  "bracketSpacing": true,
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "useTabs": false,
+  "jsxSingleQuote": false,
+  "overrides": [
+    {
+      "files": "*.{css}",
+      "options": {
+        "singleQuote": false,
+        "maxEmptyLines": 1
+      }
+    }
+  ]
+}

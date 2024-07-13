@@ -1,0 +1,14 @@
+{
+  "Index": {
+    "title": "Hello world!",
+    "notFound": "Not found",
+    "test": "Test",
+    "categories": "Categories",
+    "category": "Category",
+    "subcategory": "Subcategory",
+    "article": "Article",
+    "home": "Home page",
+    "back": "Back",
+    "drawer": "test redux"
+  }
+}

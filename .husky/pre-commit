@@ -1,0 +1,40 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+set -e
+
+echo '👷 Посмотрим что тут у нас?'
+
+npm run lint ||
+(
+    echo '🤢 Проверь код на чистоту 🤢 => npm run lint'
+    exit 1
+)
+
+npm run lint:styles ||
+(
+    echo '😤 Порядок в CSS тоже важен 😤 => npm run lint:styles'
+    exit 1
+)
+
+npm run check:types ||
+(
+    echo '❌ Хочешь прод уронить? Проверь типизацию ❌ => npm run check:types'
+    exit 1
+)
+
+npm run jest:unit ||
+(
+    echo '👋 Unit тестов не много, но и они важны 👋 => npm run jest:unit'
+    exit 1
+)
+
+#echo '🤔 Вроде нормально, соберемся локально, чтобы убедиться 🤔'
+#
+#npm run build ||
+#(
+#    echo '🏗️ Сборка не прошла, посмотри, что не так и попробуй снова 🏗️'
+#    exit 1
+#)
+
+echo '✅ Всё хорошо, ты отлично потрудился ✅'

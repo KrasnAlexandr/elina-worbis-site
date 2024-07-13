@@ -1,0 +1,128 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recommended",
+    "stylelint-config-standard-scss"
+  ],
+  "plugins": [
+    "stylelint-order",
+    "stylelint-prettier",
+    "stylelint-scss"
+  ],
+  "rules": {
+    "prettier/prettier": true,
+    "declaration-no-important": true,
+    "order/order": [
+      "custom-properties",
+      "declarations"
+    ],
+    "order/properties-order": [
+      "width",
+      "height",
+      "margin",
+      "padding",
+      "display",
+      "flex",
+      "grid-area",
+      "flex-grow",
+      "flex-shrink",
+      "flex-basis",
+      "align-content",
+      "align-items",
+      "align-self",
+      "justify-content",
+      "justify-self",
+      "gap",
+      "row-gap",
+      "column-gap",
+      "order",
+      "position",
+      "transform",
+      "top",
+      "right",
+      "bottom",
+      "left",
+      "z-index",
+      "background",
+      "background-image",
+      "background-color",
+      "background-position",
+      "background-size",
+      "border",
+      "outline",
+      "box-shadow",
+      "color",
+      "font",
+      "font-family",
+      "font-size",
+      "line-height",
+      "text-align",
+      "cursor"
+    ],
+    "declaration-property-value-disallowed-list": {
+      "box-sizing": [
+        "/.*/"
+      ],
+      "padding-bottom": [
+        "/.*/"
+      ],
+      "margin-bottom": [
+        "/.*/"
+      ],
+      "padding-top": [
+        "/.*/"
+      ],
+      "margin-top": [
+        "/.*/"
+      ],
+      "padding-left": [
+        "/.*/"
+      ],
+      "margin-left": [
+        "/.*/"
+      ],
+      "padding-right": [
+        "/.*/"
+      ],
+      "margin-right": [
+        "/.*/"
+      ]
+    },
+    "declaration-empty-line-before": [
+      "always",
+      {
+        "except": [
+          "after-comment",
+          "first-nested"
+        ],
+        "ignore": [
+          "after-comment",
+          "after-declaration",
+          "inside-single-line-block"
+        ]
+      }
+    ],
+    "comment-empty-line-before": null,
+    "comment-whitespace-inside": null,
+    "selector-class-pattern": [
+      "^([a-z][a-zA-Z]*)(_[a-zA-Z]+)*$",
+      {
+        "message": "Only camelCase or snake_case or comBine_it"
+      }
+    ],
+    "selector-id-pattern": [
+      "^__next$|^[a-z][a-zA-Z]*(-[a-zA-Z]+)*$",
+      {
+        "message": "Only kebab-case for ids is allowed",
+        "severity": "error"
+      }
+    ],
+    "custom-property-pattern": [
+      "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+      {
+        "message": "Only classical format like --color-blue "
+      }
+    ],
+    "block-no-empty": true
+  }
+}

@@ -1,0 +1,11 @@
+.title {
+  color: var(--text-color);
+}
+
+.list {
+  background: var(--main-color);
+}
+
+.item {
+  color: var(--second-color);
+}
