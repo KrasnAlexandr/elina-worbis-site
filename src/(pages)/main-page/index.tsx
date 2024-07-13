@@ -33,6 +33,7 @@ export const MainPage = () => {
           <SignSVG className={clsx(styles.mainSvg)} />
         </div>
       </section>
+
       <section className={clsx(styles.secondSection)}>
         <h2 className={clsx(styles.subtitle)}>Our Legacy</h2>
         <p className={clsx(styles.subtitleDescription, [OldStandardTT.className])}>
