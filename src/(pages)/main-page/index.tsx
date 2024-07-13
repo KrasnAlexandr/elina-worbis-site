@@ -145,7 +145,7 @@ export const MainPage = () => {
       </section>
 
       <footer className={clsx(styles.footer)}>
-        <ElinaLogo />
+        <ElinaLogo className={clsx(styles.footerSvg)} />
         <div className={clsx(styles.societe)}>
           <XSvg />
           <InstSvg />
