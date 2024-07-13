@@ -3,6 +3,7 @@
 import { useLocale } from 'next-intl';
 import { useRouter } from 'next/navigation';
 import { ChangeEvent, useTransition } from 'react';
+import { EAvailableLanguages } from '@/app/constants/available-languages';
 
 export default function LanguageSwitcher() {
   const [isPending, startTransition] = useTransition();
@@ -26,8 +27,8 @@ export default function LanguageSwitcher() {
     <>
       <label style={{ display: 'flex', gap: '10px' }}>
         <select defaultValue={currentLocale} onChange={onSelectChange} disabled={isPending}>
-          <option value="ru">Russian</option>
-          <option value="en">English</option>
+          <option value={EAvailableLanguages.MEXICO}>Mexican</option>
+          <option value={EAvailableLanguages.ENGLISH}>English</option>
         </select>
       </label>
     </>

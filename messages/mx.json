@@ -1,0 +1,14 @@
+{
+  "Index": {
+    "title": "¡Hola mundo!",
+    "notFound": "404",
+    "test": "Prueba",
+    "categories": "Categorías",
+    "category": "Categoría",
+    "subcategory": "Subcategoría",
+    "article": "Artículo",
+    "home": "Inicio",
+    "back": "Atrás",
+    "drawer": "Prueba redux"
+  }
+}

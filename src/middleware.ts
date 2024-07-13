@@ -1,10 +1,11 @@
 import createMiddleware from 'next-intl/middleware';
+import { EAvailableLanguages } from '@/app/constants/available-languages';
 
 export default createMiddleware({
-  locales: ['ru', 'en'],
-  defaultLocale: 'ru',
+  locales: [EAvailableLanguages.MEXICO, EAvailableLanguages.ENGLISH],
+  defaultLocale: EAvailableLanguages.MEXICO,
 });
 
 export const config = {
-  matcher: ['/', '/(ru|en)/:path*'],
+  matcher: ['/', '/(mx|en)/:path*'],
 };

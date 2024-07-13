@@ -1,5 +1,6 @@
 import { redirect } from 'next/navigation';
 import { headers } from 'next/headers';
+import { EAvailableLanguages } from '@/app/constants/available-languages';
 
 type Cookies = {
   [key: string]: string;
@@ -18,7 +19,7 @@ export default function RootPage() {
   const cookieHeader = headersList.get('cookie') || '';
 
   const parsedCookies: Cookies = parseCookies(cookieHeader);
-  const locale: string = parsedCookies.NEXT_LOCALE || 'ru';
+  const locale: string = parsedCookies.NEXT_LOCALE || EAvailableLanguages.MEXICO;
 
   // Redirect to the locale-specific page
   redirect(`/${locale}`);
