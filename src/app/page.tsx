@@ -1,6 +1,6 @@
 import { redirect } from 'next/navigation';
 import { headers } from 'next/headers';
-import { EAvailableLanguages } from '@/app/constants/available-languages';
+import { EAvailableLanguages } from '@/shared/constants/available-languages';
 
 type Cookies = {
   [key: string]: string;

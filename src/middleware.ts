@@ -1,5 +1,5 @@
 import createMiddleware from 'next-intl/middleware';
-import { EAvailableLanguages } from '@/app/constants/available-languages';
+import { EAvailableLanguages } from '@/shared/constants/available-languages';
 
 export default createMiddleware({
   locales: [EAvailableLanguages.MEXICO, EAvailableLanguages.ENGLISH],

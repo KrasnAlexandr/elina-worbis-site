@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { getRequestConfig } from 'next-intl/server';
-import { EAvailableLanguages } from '@/app/constants/available-languages';
+import { EAvailableLanguages } from '@/shared/constants/available-languages';
 
 const locales = [EAvailableLanguages.MEXICO, EAvailableLanguages.ENGLISH] as Array<string>;
 

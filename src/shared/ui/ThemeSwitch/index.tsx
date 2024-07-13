@@ -6,7 +6,7 @@ import { useIsMounted } from '@/shared/hooks/useIsMounted';
 import { useCallback } from 'react';
 import clsx from 'clsx';
 
-enum EThemeMap {
+export enum EThemeMap {
   LIGHT = 'light',
   DARK = 'dark',
   SYSTEM = 'system',
