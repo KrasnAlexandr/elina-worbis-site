@@ -22,10 +22,6 @@
     justify-content: space-between;
   }
 
-  .mainSvg {
-    width: 400px;
-  }
-
   .title {
     max-width: 600px;
     font-size: 60px;
@@ -45,8 +41,8 @@
     gap: 100px;
 
     .mainContent {
-      flex-direction: column-reverse;
       gap: 40px;
+      flex-direction: column-reverse;
     }
 
     .title {
