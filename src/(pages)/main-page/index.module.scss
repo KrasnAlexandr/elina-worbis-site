@@ -239,6 +239,30 @@
   }
 }
 
+@media (width <= 1024px) {
+  .fiveSection {
+    &::before {
+      width: calc(100% + 50px * 2);
+    }
+
+    .mainPhoto {
+      width: calc(100% + 50px * 2);
+    }
+  }
+}
+
+@media (width <= 490px) {
+  .fiveSection {
+    &::before {
+      width: calc(100% + 24px * 2);
+    }
+
+    .mainPhoto {
+      width: calc(100% + 24px * 2);
+    }
+  }
+}
+
 .sixSection {
   display: flex;
   flex-direction: column;
