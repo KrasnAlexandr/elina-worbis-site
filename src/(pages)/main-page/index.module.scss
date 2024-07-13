@@ -204,6 +204,25 @@
   }
 }
 
+@media (width <= 490px) {
+  .fourSection {
+    align-items: flex-start;
+    gap: 30px;
+
+    .fourSectionTitle {
+      text-align: left;
+    }
+
+    .fourSectionText {
+      text-align: left;
+    }
+
+    .contactButton {
+      align-self: center;
+    }
+  }
+}
+
 .fiveSection {
   height: 650px;
   display: flex;
@@ -259,6 +278,11 @@
 
     .mainPhoto {
       width: calc(100% + 24px * 2);
+    }
+
+    .fiveSectionTitle {
+      text-align: left;
+      max-width: none;
     }
   }
 }
